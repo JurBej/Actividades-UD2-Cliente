@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Números pares</h1>
+    <!-- Programa que imprime por pantalla todos los números pares desde 2 hasta N (N es un número solicitado al usuario) -->
+    <script>
+        let numero = parseInt(prompt("Introduce un número entero igual o mayor a 2"));
+
+        while (numero<2) {
+            alert("Debes introducir un número mayor o igual a 2");
+            numero = parseInt(prompt("Introduce un número entero igual o mayor a 2"));
+        }
+
+        for (let index = 2; index <= numero; index++) {
+            if (index%2===0) {
+                document.write("<p>"+index+"</p>");
+            }            
+        }
+    </script>
+</body>
+</html>

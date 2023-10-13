@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Números impares</h1>
+    <!-- Programa que imprime por pantalla todos los números impares desde N hasta 1 (N es un número solicitado al usuario) -->
+    <script>
+        let numero = parseInt(prompt("Introduce un número entero igual o mayor a 1"));
+
+        while (numero<1) {
+            alert("Debes introducir un número mayor o igual a 1");
+            numero = parseInt(prompt("Introduce un número entero igual o mayor a 1"));
+        }
+
+        for (let index = numero; index >= 1; index--) {
+            if (index%2!==0) {
+                document.write("<p>"+index+"</p>");
+            }            
+        }
+    </script>
+</body>
+</html>
